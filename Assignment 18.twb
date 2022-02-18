@@ -1,0 +1,659 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20202.20.0614.2338                               -->
+<workbook original-version='18.1' source-build='2020.2.2 (20202.20.0614.2338)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='CarMakers' inline='true' name='federated.1bqhxs11fp9olz127du861xmu8ha' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='CarMakers' name='textscan.1opl9ny18r04vu18bj8e306oo7b4'>
+            <connection class='textscan' directory='B:/Ineuron Tableau Projects/TABLEAU ASSIGNMENTS/Assignment-18' filename='CarMakers.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1opl9ny18r04vu18bj8e306oo7b4' name='CarMakers.csv' table='[CarMakers#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='integer' name='Car ID' ordinal='0' />
+            <column datatype='string' name='make' ordinal='1' />
+            <column datatype='string' name='fuel-type' ordinal='2' />
+            <column datatype='string' name='aspiration' ordinal='3' />
+            <column datatype='string' name='num-of-doors' ordinal='4' />
+            <column datatype='string' name='body-style' ordinal='5' />
+            <column datatype='string' name='drive-wheels' ordinal='6' />
+            <column datatype='string' name='engine-location' ordinal='7' />
+            <column datatype='real' name='wheel-base' ordinal='8' />
+            <column datatype='real' name='length' ordinal='9' />
+            <column datatype='real' name='width' ordinal='10' />
+            <column datatype='real' name='height' ordinal='11' />
+            <column datatype='integer' name='curb-weight' ordinal='12' />
+            <column datatype='string' name='num-of-cylinders' ordinal='13' />
+            <column datatype='integer' name='engine-size' ordinal='14' />
+            <column datatype='real' name='bore' ordinal='15' />
+            <column datatype='real' name='stroke' ordinal='16' />
+            <column datatype='real' name='compression-ratio' ordinal='17' />
+            <column datatype='integer' name='horsepower' ordinal='18' />
+            <column datatype='integer' name='peak-rpm' ordinal='19' />
+            <column datatype='integer' name='city-mpg' ordinal='20' />
+            <column datatype='integer' name='highway-mpg' ordinal='21' />
+            <column datatype='integer' name='price' ordinal='22' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1opl9ny18r04vu18bj8e306oo7b4' name='CarMakers.csv' table='[CarMakers#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='integer' name='Car ID' ordinal='0' />
+            <column datatype='string' name='make' ordinal='1' />
+            <column datatype='string' name='fuel-type' ordinal='2' />
+            <column datatype='string' name='aspiration' ordinal='3' />
+            <column datatype='string' name='num-of-doors' ordinal='4' />
+            <column datatype='string' name='body-style' ordinal='5' />
+            <column datatype='string' name='drive-wheels' ordinal='6' />
+            <column datatype='string' name='engine-location' ordinal='7' />
+            <column datatype='real' name='wheel-base' ordinal='8' />
+            <column datatype='real' name='length' ordinal='9' />
+            <column datatype='real' name='width' ordinal='10' />
+            <column datatype='real' name='height' ordinal='11' />
+            <column datatype='integer' name='curb-weight' ordinal='12' />
+            <column datatype='string' name='num-of-cylinders' ordinal='13' />
+            <column datatype='integer' name='engine-size' ordinal='14' />
+            <column datatype='real' name='bore' ordinal='15' />
+            <column datatype='real' name='stroke' ordinal='16' />
+            <column datatype='real' name='compression-ratio' ordinal='17' />
+            <column datatype='integer' name='horsepower' ordinal='18' />
+            <column datatype='integer' name='peak-rpm' ordinal='19' />
+            <column datatype='integer' name='city-mpg' ordinal='20' />
+            <column datatype='integer' name='highway-mpg' ordinal='21' />
+            <column datatype='integer' name='price' ordinal='22' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[CarMakers.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;Rs&quot;</attribute>
+              <attribute datatype='string' name='debit-close-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='debit-open-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Car ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Car ID]</local-name>
+            <parent-name>[CarMakers.csv]</parent-name>
+            <remote-alias>Car ID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CarMakers.csv_40EC88DBF93A46BB954DB3B270B23067]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>make</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[make]</local-name>
+            <parent-name>[CarMakers.csv]</parent-name>
+            <remote-alias>make</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CarMakers.csv_40EC88DBF93A46BB954DB3B270B23067]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fuel-type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[fuel-type]</local-name>
+            <parent-name>[CarMakers.csv]</parent-name>
+            <remote-alias>fuel-type</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CarMakers.csv_40EC88DBF93A46BB954DB3B270B23067]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>aspiration</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[aspiration]</local-name>
+            <parent-name>[CarMakers.csv]</parent-name>
+            <remote-alias>aspiration</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CarMakers.csv_40EC88DBF93A46BB954DB3B270B23067]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>num-of-doors</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[num-of-doors]</local-name>
+            <parent-name>[CarMakers.csv]</parent-name>
+            <remote-alias>num-of-doors</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CarMakers.csv_40EC88DBF93A46BB954DB3B270B23067]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>body-style</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[body-style]</local-name>
+            <parent-name>[CarMakers.csv]</parent-name>
+            <remote-alias>body-style</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CarMakers.csv_40EC88DBF93A46BB954DB3B270B23067]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>drive-wheels</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[drive-wheels]</local-name>
+            <parent-name>[CarMakers.csv]</parent-name>
+            <remote-alias>drive-wheels</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CarMakers.csv_40EC88DBF93A46BB954DB3B270B23067]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>engine-location</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[engine-location]</local-name>
+            <parent-name>[CarMakers.csv]</parent-name>
+            <remote-alias>engine-location</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CarMakers.csv_40EC88DBF93A46BB954DB3B270B23067]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>wheel-base</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[wheel-base]</local-name>
+            <parent-name>[CarMakers.csv]</parent-name>
+            <remote-alias>wheel-base</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CarMakers.csv_40EC88DBF93A46BB954DB3B270B23067]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>length</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[length]</local-name>
+            <parent-name>[CarMakers.csv]</parent-name>
+            <remote-alias>length</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CarMakers.csv_40EC88DBF93A46BB954DB3B270B23067]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>width</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[width]</local-name>
+            <parent-name>[CarMakers.csv]</parent-name>
+            <remote-alias>width</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CarMakers.csv_40EC88DBF93A46BB954DB3B270B23067]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>height</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[height]</local-name>
+            <parent-name>[CarMakers.csv]</parent-name>
+            <remote-alias>height</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CarMakers.csv_40EC88DBF93A46BB954DB3B270B23067]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>curb-weight</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[curb-weight]</local-name>
+            <parent-name>[CarMakers.csv]</parent-name>
+            <remote-alias>curb-weight</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CarMakers.csv_40EC88DBF93A46BB954DB3B270B23067]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>num-of-cylinders</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[num-of-cylinders]</local-name>
+            <parent-name>[CarMakers.csv]</parent-name>
+            <remote-alias>num-of-cylinders</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CarMakers.csv_40EC88DBF93A46BB954DB3B270B23067]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>engine-size</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[engine-size]</local-name>
+            <parent-name>[CarMakers.csv]</parent-name>
+            <remote-alias>engine-size</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CarMakers.csv_40EC88DBF93A46BB954DB3B270B23067]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>bore</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[bore]</local-name>
+            <parent-name>[CarMakers.csv]</parent-name>
+            <remote-alias>bore</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CarMakers.csv_40EC88DBF93A46BB954DB3B270B23067]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>stroke</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[stroke]</local-name>
+            <parent-name>[CarMakers.csv]</parent-name>
+            <remote-alias>stroke</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CarMakers.csv_40EC88DBF93A46BB954DB3B270B23067]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>compression-ratio</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[compression-ratio]</local-name>
+            <parent-name>[CarMakers.csv]</parent-name>
+            <remote-alias>compression-ratio</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CarMakers.csv_40EC88DBF93A46BB954DB3B270B23067]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>horsepower</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[horsepower]</local-name>
+            <parent-name>[CarMakers.csv]</parent-name>
+            <remote-alias>horsepower</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CarMakers.csv_40EC88DBF93A46BB954DB3B270B23067]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>peak-rpm</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[peak-rpm]</local-name>
+            <parent-name>[CarMakers.csv]</parent-name>
+            <remote-alias>peak-rpm</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CarMakers.csv_40EC88DBF93A46BB954DB3B270B23067]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>city-mpg</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[city-mpg]</local-name>
+            <parent-name>[CarMakers.csv]</parent-name>
+            <remote-alias>city-mpg</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CarMakers.csv_40EC88DBF93A46BB954DB3B270B23067]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>highway-mpg</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[highway-mpg]</local-name>
+            <parent-name>[CarMakers.csv]</parent-name>
+            <remote-alias>highway-mpg</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CarMakers.csv_40EC88DBF93A46BB954DB3B270B23067]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>price</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[price]</local-name>
+            <parent-name>[CarMakers.csv]</parent-name>
+            <remote-alias>price</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CarMakers.csv_40EC88DBF93A46BB954DB3B270B23067]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[Car ID]' role='dimension' type='ordinal' />
+      <_.fcp.ObjectModelTableType.true...column caption='CarMakers.csv' datatype='table' name='[__tableau_internal_object_id__].[CarMakers.csv_40EC88DBF93A46BB954DB3B270B23067]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[city-mpg]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[highway-mpg]' role='measure' type='quantitative' />
+      <column-instance column='[city-mpg]' derivation='Avg' name='[avg:city-mpg:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[highway-mpg]' derivation='Avg' name='[avg:highway-mpg:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[city-mpg]' derivation='Sum' name='[sum:city-mpg:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[highway-mpg]' derivation='Sum' name='[sum:highway-mpg:qk]' pivot='key' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1bqhxs11fp9olz127du861xmu8ha].[avg:city-mpg:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1bqhxs11fp9olz127du861xmu8ha].[sum:city-mpg:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1bqhxs11fp9olz127du861xmu8ha].[avg:highway-mpg:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1bqhxs11fp9olz127du861xmu8ha].[sum:highway-mpg:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='CarMakers.csv' id='CarMakers.csv_40EC88DBF93A46BB954DB3B270B23067'>
+            <properties context=''>
+              <relation connection='textscan.1opl9ny18r04vu18bj8e306oo7b4' name='CarMakers.csv' table='[CarMakers#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='integer' name='Car ID' ordinal='0' />
+                  <column datatype='string' name='make' ordinal='1' />
+                  <column datatype='string' name='fuel-type' ordinal='2' />
+                  <column datatype='string' name='aspiration' ordinal='3' />
+                  <column datatype='string' name='num-of-doors' ordinal='4' />
+                  <column datatype='string' name='body-style' ordinal='5' />
+                  <column datatype='string' name='drive-wheels' ordinal='6' />
+                  <column datatype='string' name='engine-location' ordinal='7' />
+                  <column datatype='real' name='wheel-base' ordinal='8' />
+                  <column datatype='real' name='length' ordinal='9' />
+                  <column datatype='real' name='width' ordinal='10' />
+                  <column datatype='real' name='height' ordinal='11' />
+                  <column datatype='integer' name='curb-weight' ordinal='12' />
+                  <column datatype='string' name='num-of-cylinders' ordinal='13' />
+                  <column datatype='integer' name='engine-size' ordinal='14' />
+                  <column datatype='real' name='bore' ordinal='15' />
+                  <column datatype='real' name='stroke' ordinal='16' />
+                  <column datatype='real' name='compression-ratio' ordinal='17' />
+                  <column datatype='integer' name='horsepower' ordinal='18' />
+                  <column datatype='integer' name='peak-rpm' ordinal='19' />
+                  <column datatype='integer' name='city-mpg' ordinal='20' />
+                  <column datatype='integer' name='highway-mpg' ordinal='21' />
+                  <column datatype='integer' name='price' ordinal='22' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Side by Side Bar chart'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='CarMakers' name='federated.1bqhxs11fp9olz127du861xmu8ha' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1bqhxs11fp9olz127du861xmu8ha'>
+            <column-instance column='[city-mpg]' derivation='Avg' name='[avg:city-mpg:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[highway-mpg]' derivation='Avg' name='[avg:highway-mpg:qk]' pivot='key' type='quantitative' />
+            <column datatype='integer' name='[city-mpg]' role='measure' type='quantitative' />
+            <column datatype='string' name='[fuel-type]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[highway-mpg]' role='measure' type='quantitative' />
+            <column-instance column='[fuel-type]' derivation='None' name='[none:fuel-type:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1bqhxs11fp9olz127du861xmu8ha].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1bqhxs11fp9olz127du861xmu8ha].[avg:city-mpg:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1bqhxs11fp9olz127du861xmu8ha].[avg:highway-mpg:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1bqhxs11fp9olz127du861xmu8ha].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.1bqhxs11fp9olz127du861xmu8ha].[:Measure Names]' value='85' />
+            <format attr='text-format' field='[federated.1bqhxs11fp9olz127du861xmu8ha].[avg:city-mpg:qk]' value='n#,##0;-#,##0' />
+            <format attr='text-format' field='[federated.1bqhxs11fp9olz127du861xmu8ha].[avg:highway-mpg:qk]' value='n#,##0;-#,##0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1bqhxs11fp9olz127du861xmu8ha].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1bqhxs11fp9olz127du861xmu8ha].[Multiple Values]</rows>
+        <cols>([federated.1bqhxs11fp9olz127du861xmu8ha].[none:fuel-type:nk] / [federated.1bqhxs11fp9olz127du861xmu8ha].[:Measure Names])</cols>
+      </table>
+      <simple-id uuid='{72D94ED0-DC28-4B40-802D-05592F134CEA}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Side by Side Bar chart'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1bqhxs11fp9olz127du861xmu8ha].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1bqhxs11fp9olz127du861xmu8ha].[:Measure Names]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{EA8180BB-967D-47C2-9C1D-1815312BDF66}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Side by Side Bar chart' width='192'>
+      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
+      QmlSAKG0/wNmg5PzKatz1wAAAABJRU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
